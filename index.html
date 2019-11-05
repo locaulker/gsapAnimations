@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>gsapAnimations</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>JS Animation using GSAP</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  
+  <!-- <div class="controlButtons">
+    <button id="start">Start</button>
+    <button id="pause">Pause</button>
+    <button id="stop">Stop</button>
+    <button id="reverse">Reverse</button>
+  </div> -->
   <div class="content-holder">
     <div class="tools">
       <img id="toolBox" src="images/tool-box.svg"/>
-      <img src="images/weight-lifter.svg"/>
-      <img src="images/crazy-fast.svg"/>
-      <img src="images/leaf.png"/>
+      <img id="weightLifter" src="images/weight-lifter.svg"/>
+      <img id="crazy" src="images/crazy-fast.svg"/>
+      <img id="leaf" src="images/leaf.png"/>
     </div>
 
     <div class="title">
@@ -24,20 +27,16 @@
     <div class="gsapTitle">
       <div class="superman">
         <img src="images/gsap-superhero.svg">
-
         <div class="mainTitle"><p><span class="asapReg">Green</span><span class="greenText"> Sock</span></p>
-
           <p><span class="greenText">Animation Platform</span></p>
         </div>
       </div>
     </div>
-
   </div>
 
   <section id="scripts">
     <script src="js/jquery/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="js/App.js"></script>
   </section>
 </body>
